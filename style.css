@@ -6,4 +6,71 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  background: #3efcec;
+}
+
+.calculator {
+  background: #333;
+  width: 300px;
+  padding: 40px 20px;
+  margin: 150px auto;
+  border-radius: 10px;
+}
+
+#display {
+  /* width: 100%; */
+  background: #555;
+
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+#display input {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #f4f4f4;
+  text-align: right;
+}
+
+#display .display--typed {
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+#display .display--result {
+  font-size: 22px;
+}
+
+.buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.buttons button {
+  cursor: pointer;
+  height: 40px;
+  font-size: 18px;
+  /* font-weight: 500; */
+  background: #b3ebe6;
+  border: none;
+  border-radius: 6px;
+  transition: opacity 150ms ease-in-out;
+}
+
+.buttons button:hover,
+.buttons button:focus {
+  opacity: 0.87;
+}
+
+.buttons button.symbol {
+  background: rgb(247, 117, 66);
+  color: #f4f4f4;
+}
+
+.zero {
+  grid-column: span 2;
 }
