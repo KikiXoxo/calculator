@@ -56,6 +56,7 @@ body {
   font-size: 18px;
   /* font-weight: 500; */
   background: #b3ebe6;
+  color: #111;
   border: none;
   border-radius: 6px;
   transition: opacity 150ms ease-in-out;
