@@ -36,7 +36,9 @@ const calcResult = function () {
       displayValueResult = displayValueResult + '**(1/2)';
     }
 
-    const result = eval(displayValueResult);
+    let result = eval(displayValueResult);
+    if (result === Infinity) result = 'Error';
+
     displayResult.value = result;
     displayValue = '';
   } catch (error) {
