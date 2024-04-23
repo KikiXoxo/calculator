@@ -4,8 +4,7 @@
 const displayTyped = document.querySelector('.display--typed');
 const displayResult = document.querySelector('.display--result');
 const btnsContainer = document.querySelector('.buttons');
-const root = document.querySelector('.root').textContent;
-const operators = ['+', '-', '*', '/', '^', root];
+const operators = ['+', '-', '*', '/', '^', '√'];
 
 let displayValue = '';
 let displayValueResult = '';
@@ -31,8 +30,8 @@ const calcResult = function () {
     if (displayValueResult.includes('^'))
       displayValueResult = displayValueResult.replaceAll('^', '**');
 
-    if (displayValueResult.includes(root)) {
-      displayValueResult = displayValueResult.replaceAll(root, '');
+    if (displayValueResult.includes('√')) {
+      displayValueResult = displayValueResult.replaceAll('√', '');
       displayValueResult = displayValueResult + '**(1/2)';
     }
 
